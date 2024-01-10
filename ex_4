@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+float getNumber()
+{
+	printf("introduceti un numar: ");
+	float x;
+	scanf_s("%f", &x);
+	return x;
+}
+
+int main()
+{
+	float a{ getNumber() };
+	float b{ getNumber() };
+
+	if (a == b)
+		printf("Identic");
+	else
+		printf("Diferit");
+
+	return 0;
+}
