@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+	printf("introduceti un numar: ");
+	int x;
+	scanf_s("%d", &x);
+
+	if (x % 6 == 0)
+		printf("%d este divizibil cu 6", x);
+	else
+		printf("%d nu este divizibil cu 6", x);
+
+	
+	return 0;
+}
