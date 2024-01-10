@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int getNumber()
+{
+	printf("introduceti un numar: ");
+	int x;
+	scanf_s("%d", &x);
+	return x;
+}
+
+
+int main()
+{
+	int a{ getNumber() };
+	int b{ getNumber() };
+
+	if (a > b)
+		printf("%d este maximul", a);
+	else
+		printf("%d este maximul", b);
+
+	return 0;
+}
