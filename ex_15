@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+	int num, cifra;
+	int suma = 0;
+
+	printf("introduceti un numar: ");
+	scanf_s("%d", &num);
+
+	while (num != 0)
+	{
+		cifra = num % 10;
+		if (cifra % 2 != 0)
+		{
+			suma += cifra;
+		}
+		num /= 10;
+	}
+	
+	printf("suma cifrelor impare este: %d\n", suma);
+	
+	return 0;
+}
